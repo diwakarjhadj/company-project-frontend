@@ -1,0 +1,14 @@
+.search-box-text{
+    margin: 0px 255px;
+}
+.search-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input input{
+    border-radius: 5px;
+    border: none;
+    background-color: khaki;
+    padding: 5px;
+}

@@ -1,0 +1,10 @@
+.month-dropdown{
+    padding: 5px;
+}
+.month-dropdown select{
+    border-radius: 5px;
+    background-color: khaki;
+}
+.months{
+    background-color: #fff;
+}

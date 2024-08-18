@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../css/MonthdropDown.css';
-import DataTable from './DataTable';
 const MonthdropDown = () => {
     const [selectedMonth, setSelectedMonth] = useState('');
     const handleMonthChange = (event) => {
@@ -24,9 +23,6 @@ const MonthdropDown = () => {
                     <option className='months' value="November">Nov</option>
                     <option className='months' value="December">Dec</option>
                 </select>
-            </div>
-            <div className='main-table'>
-                <DataTable/>
             </div>
         </>
     )

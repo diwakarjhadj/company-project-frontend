@@ -1,6 +1,5 @@
 .transaction{
     background-color: aliceblue;
-    height: 90vh;
 }
 
 .transaction-box{
@@ -17,4 +16,8 @@
 .transaction-data{
     display: flex;
     justify-content: center;
+}
+
+.main-search-text{
+    margin: 0px 100px;
 }

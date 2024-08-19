@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import '../css/MonthdropDown.css';
+import { AuthContext } from '../contexts/AuthContext';
 const MonthdropDown = () => {
-    const [selectedMonth, setSelectedMonth] = useState('');
+    // const { selectedMonth, setSelectedMonth }=useContext(AuthContext);
+    const {state,setSelectedMonth}=useContext(AuthContext);
     const handleMonthChange = (event) => {
-        setSelectedMonth(event.target.value);
+        const monthValue = event.target.value;
+
+        setSelectedMonth(monthValue);
     };
     return (
         <>
             <div className='month-dropdown'>
-                <select id="month" value={selectedMonth} onChange={handleMonthChange}>
+                <select id="month" value={state.selectedMonth} onChange={handleMonthChange}>
                     <option value="">Select a Month</option>
                     <option className='months' value="January">Jan</option>
                     <option className='months' value="February">Feb</option>
